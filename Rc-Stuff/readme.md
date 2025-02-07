@@ -11,10 +11,10 @@
 - My Previous Builds    
   You can download a config and use Notepad++ with the compareplus plugin to see line by line differences.
   Helpful for easy sanity check of your settings.  
-  - [Nano Goblin ANALOG](./GoblinAnalog)
-  - [Nano Goblin DIGITAL](./GoblinDigital)
-  - [Atomrc Penguin](./Penguin)
-  - [Atomrc Dolphin](./Dolphin)
+  - [Nano Goblin ANALOG](./Planes/GoblinAnalog)
+  - [Nano Goblin DIGITAL](./Planes/GoblinDigital)
+  - [Atomrc Penguin](./Planes/Penguin)
+  - [Atomrc Dolphin](./Planes/Dolphin)
  
 
   ## Important:
