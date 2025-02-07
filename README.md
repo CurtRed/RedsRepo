@@ -5,7 +5,7 @@ A collection of trash
 
 
 
-# [RC FOLDER](/RC-Stuff)
+# [RC FOLDER](/Rc-Stuff)
 
 -Generic Inav Notes-
 
@@ -18,4 +18,4 @@ set osd_rssi_dbm: -95
 
 
 
-# SuperDuty Stuff
+# [SuperDuty Stuff](/Superduty)
