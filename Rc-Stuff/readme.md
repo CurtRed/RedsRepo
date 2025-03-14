@@ -2,7 +2,7 @@
 
  
   - [Nano Goblin Diff all/Dump all](https://github.com/CurtRed/RedsRepo/tree/main/Rc-Stuff/Nano%20Goblin)  
-
+   > Or click through folder's on github for all planes
 
 
   ### Stick Commands while unarmed  
