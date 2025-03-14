@@ -1,7 +1,7 @@
 # RC and Fpv Notes
 
  
-  - [Nano Goblin Diff all/Dump all](./Planes/NanoGoblin/README.md)
+  - [Nano Goblin Diff all/Dump all](./NanoGoblin/README.md)
 <!-- >  - [Atomrc Penguin](./Planes/Penguin) -->
 <!-- >  - [Atomrc Dolphin](./Planes/Dolphin) -->
 
