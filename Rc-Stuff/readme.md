@@ -31,7 +31,7 @@ WIGGLE PITCH/ROLL STICK + Thr Low to disable Autolaunch.
 
 
 ## Inav Settings Reference  
-  ### [Inav Settings](https://github.com/iNavFlight/inav/blob/master/docs/Settings.md)  
+   [Inav Settings](https://github.com/iNavFlight/inav/blob/master/docs/Settings.md)  
 
 
 
