@@ -1,24 +1,28 @@
 ## RC and Fpv Notes
 
  
-  - [Nano Goblin Diff all/Dump all](https://github.com/CurtRed/RedsRepo/tree/main/Rc-Stuff/Nano%20Goblin)  
-   > Or click through folder's on github for all planes
   
 
-### Turn off Compass if you haven't gotten it perfectly aligned in alignment tab. It has to read proper direction while rolling and pitching plane. If it creeps up or down, it will adversely effect flight. Turning it off won't effect much for planes.
+  
+ 
+   - [Inav Settings Reference](https://github.com/iNavFlight/inav/blob/master/docs/Settings.md)  
 
-  ### Stick Commands while unarmed  
+
+- Turn off Compass if you haven't gotten it perfectly aligned in alignment tab. It has to read proper direction while rolling and pitching plane. If it creeps up or down, it most likely  effect flight. If unsure, turning it off is the best option and won't effect much.  
+
+  
+  - Stick Commands while unarmed  
 ![StickPositions](https://github.com/user-attachments/assets/a892b04a-b837-475a-94b3-e3f0f344b8c6)
 
 
-  - **This allows you to arm w/out gps lock, etc. Used for testing.**
+  > This allows you to arm w/out gps lock, etc. for testing.
       > set `nav_extra_arming_safety = ALLOW_BYPASS`    
 ![Bypass](https://github.com/user-attachments/assets/ce84dd5b-9d7e-4238-b9d9-3df9faea9d1a)
 
 
 
   - **Bypass Autolaunch**  
-WIGGLE PITCH/ROLL STICK + Thr Low to disable Autolaunch. 
+WIGGLE PITCH/ROLL STICK + Thr Low to disable Autolaunch (For Hand Launching or combine with prev. for quick motor bench tests)
 
     >### Accidental disarm mid-air.  
     >After disarm,  
@@ -28,18 +32,17 @@ WIGGLE PITCH/ROLL STICK + Thr Low to disable Autolaunch.
 
 
 
-## Inav Settings Reference  
-   [Inav Settings](https://github.com/iNavFlight/inav/blob/master/docs/Settings.md)  
-
-
-
-### Autolaunch info  
+### Autolaunch idle thr  
 >I set nav_fw_launch_idle_thr to 0 for light models. If the plane has a hard time gaining control authority after throw, it can be helpful to use. Just remember to watch the prop when used.
 
 
-# General Nano Goblin notes
 
-### Micro-Stalls/Porpising
+
+
+
+
+
+### NanoGoblin Micro-Stalls/Porpising
   
   - [From rc forums](https://www.rcgroups.com/forums/showthread.php?2955321-STRIX-Nano-Goblin/page391)
     > porpoising usually means either too much servo travel on the elevator control or tail heavy. should only be around 5-6mm up from neutral and 5-6mm down for 10mm total, for maiden. If it is like 18mm or more then it makes the plane nigh unflyable at launch. I didn't pay close attntion to this at first and made a bunch of unsuccessful launches. reviewed the build video, lowered my servo throws and then it launched nicely. And planks don't have empennage way back so are more sensitive to CG placement
