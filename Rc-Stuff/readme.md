@@ -1,15 +1,11 @@
-# RC and Fpv Notes
+RC and Fpv Notes
 
  
-  - [Nano Goblin Diff all/Dump all](https://github.com/CurtRed/RedsRepo/tree/main/Rc-Stuff/Nano%20Goblin)
-<!-- >  - [Atomrc Penguin](./Planes/Penguin) -->
-<!-- >  - [Atomrc Dolphin](./Planes/Dolphin) -->
+  - [Nano Goblin Diff all/Dump all](https://github.com/CurtRed/RedsRepo/tree/main/Rc-Stuff/Nano%20Goblin)  
 
 
 
-## Random Useful Info
-
-  ### Stick Commands while unarmed
+  ### Stick Commands while unarmed  
 ![StickPositions](https://github.com/user-attachments/assets/a892b04a-b837-475a-94b3-e3f0f344b8c6)
 
 
