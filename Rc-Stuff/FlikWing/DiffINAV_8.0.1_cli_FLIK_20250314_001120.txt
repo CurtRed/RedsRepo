@@ -15,8 +15,7 @@ defaults noreboot
 # Timer overrides
 
 # Outputs [servo]
-servo 1 1000 2000 1475 -94
-servo 2 1000 2000 1520 94
+servo 1 1000 2000 1500 -100
 
 # safehome
 
@@ -118,9 +117,9 @@ osd_layout 0 135 3 19 V
 set gyro_main_lpf_hz = 25
 set dynamic_gyro_notch_q = 250
 set dynamic_gyro_notch_min_hz = 30
-set gyro_zero_y = -12
-set gyro_zero_z = -4
-set ins_gravity_cmss =  968.893
+set gyro_zero_y = -11
+set gyro_zero_z = -3
+set ins_gravity_cmss =  974.055
 set gyro_adaptive_filter_min_hz = 20
 set acc_hardware = ICM42605
 set acczero_x = -5
@@ -144,11 +143,10 @@ set baro_hardware = DPS310
 set pitot_hardware = VIRTUAL
 set serialrx_halfduplex = OFF
 set blackbox_rate_denom = 4
-set motor_pwm_protocol = DSHOT300
+set motor_pwm_protocol = DSHOT150
 set motor_poles = 12
 set failsafe_procedure = RTH
-set align_board_roll = -10
-set align_board_pitch = 10
+set align_board_yaw = 20
 set servo_pwm_rate = 100
 set small_angle = 180
 set applied_defaults = 4
@@ -158,25 +156,28 @@ set gps_ublox_use_beidou = ON
 set deadband = 1
 set yaw_deadband = 1
 set airmode_type = STICK_CENTER_ONCE
-set nav_wp_radius = 1676
-set nav_wp_max_safe_distance = 500
+set nav_wp_radius = 1219
+set nav_wp_max_safe_distance = 366
 set nav_fw_wp_turn_smoothing = ON
+set nav_land_maxalt_vspd = 183
+set nav_emerg_landing_speed = 447
 set nav_rth_climb_first = ON_FW_SPIRAL
 set nav_rth_climb_first_stage_mode = EXTRA
-set nav_rth_climb_first_stage_altitude = 3048
+set nav_rth_climb_first_stage_altitude = 2438
 set nav_rth_climb_ignore_emerg = ON
 set nav_rth_allow_landing = FS_ONLY
+set nav_rth_fs_landing_delay = 10
 set nav_rth_altitude = 7315
-set nav_rth_home_altitude = 6706
+set nav_rth_home_altitude = 6096
 set safehome_usage_mode = OFF
 set nav_fw_bank_angle = 45
-set nav_fw_manual_climb_rate = 335
-set nav_fw_climb_angle = 28
+set nav_fw_manual_climb_rate = 366
+set nav_fw_climb_angle = 30
 set nav_fw_pitch2thr_smoothing = 5
-set nav_fw_loiter_radius = 5182
+set nav_fw_loiter_radius = 4572
 set fw_loiter_direction = LEFT
 set nav_fw_control_smoothness = 3
-set nav_fw_launch_max_angle = 80
+set nav_fw_launch_max_angle = 100
 set nav_fw_launch_motor_delay = 0
 set nav_fw_launch_spinup_time = 10
 set nav_fw_launch_max_altitude = 6706
@@ -206,26 +207,28 @@ control_profile 1
 set fw_p_pitch = 15
 set fw_i_pitch = 5
 set fw_d_pitch = 5
-set fw_ff_pitch = 82
+set fw_ff_pitch = 115
 set fw_p_roll = 15
 set fw_i_roll = 3
 set fw_d_roll = 7
-set fw_ff_roll = 65
+set fw_ff_roll = 90
 set fw_p_yaw = 20
 set fw_i_yaw = 0
 set fw_ff_yaw = 100
 set max_angle_inclination_rll = 550
+set max_angle_inclination_pit = 500
 set dterm_lpf_hz = 10
 set fw_turn_assist_pitch_gain =  0.300
 set nav_fw_pos_z_p = 35
 set nav_fw_pos_xy_p = 70
 set d_boost_min =  1.000
 set d_boost_max =  1.000
-set rc_expo = 40
+set rc_expo = 45
 set rc_yaw_expo = 30
 set roll_rate = 18
-set pitch_rate = 9
+set pitch_rate = 10
 set yaw_rate = 4
+set manual_rc_expo = 40
 
 # control_profile
 control_profile 2
