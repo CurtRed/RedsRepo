@@ -1,7 +1,7 @@
 # RC and Fpv Notes
 
  
-  - [Nano Goblin Diff all/Dump all](./NanoGoblin/README.md)
+  - [Nano Goblin Diff all/Dump all](https://github.com/CurtRed/RedsRepo/tree/main/Rc-Stuff/Nano%20Goblin/Digital)
 <!-- >  - [Atomrc Penguin](./Planes/Penguin) -->
 <!-- >  - [Atomrc Dolphin](./Planes/Dolphin) -->
 
