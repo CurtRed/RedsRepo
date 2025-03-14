@@ -3,7 +3,9 @@
  
   - [Nano Goblin Diff all/Dump all](https://github.com/CurtRed/RedsRepo/tree/main/Rc-Stuff/Nano%20Goblin)  
    > Or click through folder's on github for all planes
+  
 
+### Turn off Compass if you haven't gotten it perfectly aligned in alignment tab. It has to read proper direction while rolling and pitching plane. If it creeps up or down, it will adversely effect flight. Turning it off won't effect much for planes.
 
   ### Stick Commands while unarmed  
 ![StickPositions](https://github.com/user-attachments/assets/a892b04a-b837-475a-94b3-e3f0f344b8c6)
