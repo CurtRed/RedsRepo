@@ -1,4 +1,6 @@
-diff all
+
+
+# diff all 
 
 # version
 # INAV/SPEEDYBEEF405WING 8.0.1 Feb 25 2025 / 10:33:31 (171d00bb) 
@@ -15,12 +17,13 @@ defaults noreboot
 # Timer overrides
 
 # Outputs [servo]
-servo 1 1000 2000 1510 -100
-servo 2 1000 2000 1490 100
+servo 1 1000 2000 1540 -100
+servo 2 1000 2000 1444 100
 
 # safehome
 
 # Fixed Wing Approach
+fwapproach 8 6000 500 0 0 0 0
 
 # geozone
 
@@ -66,10 +69,10 @@ serial 4 33554432 115200 115200 0 115200
 
 # Modes [aux]
 aux 0 0 0 1700 2100
-aux 1 1 3 900 1300
-aux 2 12 3 1700 2100
-aux 3 53 2 1300 1700
-aux 4 10 1 1700 2100
+aux 1 2 3 900 1300
+aux 2 53 3 1700 2100
+aux 3 10 1 1700 2100
+aux 4 28 2 1300 1700
 aux 5 21 2 1700 2100
 aux 6 54 4 1700 2100
 
@@ -86,34 +89,35 @@ aux 6 54 4 1700 2100
 osd_layout 0 0 23 0 H
 osd_layout 0 1 12 0 H
 osd_layout 0 3 8 6 V
-osd_layout 0 7 6 17 V
-osd_layout 0 9 5 15 V
-osd_layout 0 11 6 3 V
-osd_layout 0 12 6 2 V
+osd_layout 0 7 1 17 V
+osd_layout 0 9 5 15 H
+osd_layout 0 11 1 3 V
+osd_layout 0 12 1 2 V
 osd_layout 0 14 40 0 V
-osd_layout 0 15 43 1 V
-osd_layout 0 22 20 0 V
-osd_layout 0 23 32 0 V
+osd_layout 0 15 46 1 V
+osd_layout 0 22 19 0 V
+osd_layout 0 23 11 0 V
 osd_layout 0 24 31 0 H
-osd_layout 0 26 44 9 V
-osd_layout 0 28 6 19 V
+osd_layout 0 26 48 10 V
+osd_layout 0 28 1 18 V
 osd_layout 0 30 12 14 V
-osd_layout 0 32 6 0 V
-osd_layout 0 33 5 16 V
+osd_layout 0 32 1 1 V
+osd_layout 0 33 1 16 V
 osd_layout 0 34 22 0 V
 osd_layout 0 41 44 9 H
 osd_layout 0 42 37 9 H
-osd_layout 0 46 44 7 V
-osd_layout 0 54 6 1 V
-osd_layout 0 85 45 2 V
+osd_layout 0 46 46 8 V
+osd_layout 0 54 1 0 V
+osd_layout 0 85 48 2 V
 osd_layout 0 86 6 18 H
 osd_layout 0 107 6 18 H
 osd_layout 0 108 10 8 H
-osd_layout 0 109 44 0 V
+osd_layout 0 109 46 0 V
 osd_layout 0 110 38 1 H
 osd_layout 0 111 37 1 H
 osd_layout 0 128 6 15 H
-osd_layout 0 135 6 18 V
+osd_layout 0 129 21 19 V
+osd_layout 0 135 1 19 V
 osd_layout 0 139 6 15 H
 osd_layout 0 166 6 14 H
 
@@ -133,7 +137,7 @@ set dynamic_gyro_notch_min_hz = 30
 set setpoint_kalman_enabled = OFF
 set gyro_zero_y = -5
 set gyro_zero_z = 9
-set ins_gravity_cmss =  977.932
+set ins_gravity_cmss =  979.954
 set gyro_adaptive_filter_min_hz = 20
 set acc_hardware = ICM42605
 set acc_lpf_type = PT1
@@ -157,7 +161,9 @@ set serialrx_halfduplex = OFF
 set blackbox_rate_denom = 2
 set motor_pwm_protocol = DSHOT150
 set failsafe_procedure = RTH
+set failsafe_mission_delay = 220
 set align_board_yaw = 1800
+set current_meter_scale = 250
 set servo_pwm_rate = 100
 set small_angle = 180
 set applied_defaults = 4
@@ -168,41 +174,44 @@ set gps_ublox_use_glonass = ON
 set deadband = 1
 set yaw_deadband = 1
 set airmode_type = STICK_CENTER_ONCE
-set nav_wp_radius = 1219
-set nav_wp_max_safe_distance = 500
+set nav_wp_radius = 1524
+set nav_wp_enforce_altitude = 457
+set nav_wp_max_safe_distance = 610
+set nav_fw_wp_tracking_accuracy = 5
 set nav_fw_wp_turn_smoothing = ON
 set nav_land_maxalt_vspd = 100
 set nav_land_slowdown_minalt = 549
 set nav_rth_climb_first = ON_FW_SPIRAL
-set nav_rth_climb_first_stage_mode = EXTRA
-set nav_rth_climb_first_stage_altitude = 3048
 set nav_rth_climb_ignore_emerg = ON
 set nav_rth_allow_landing = FS_ONLY
 set nav_rth_fs_landing_delay = 30
-set nav_rth_altitude = 7620
-set nav_rth_home_altitude = 6858
+set nav_rth_altitude = 10668
+set nav_rth_home_altitude = 7620
 set safehome_usage_mode = OFF
 set nav_fw_bank_angle = 50
-set nav_fw_auto_climb_rate = 650
-set nav_fw_manual_climb_rate = 457
-set nav_fw_climb_angle = 50
-set nav_fw_loiter_radius = 5486
-set fw_loiter_direction = LEFT
-set nav_fw_control_smoothness = 3
+set nav_fw_auto_climb_rate = 1000
+set nav_fw_manual_climb_rate = 610
+set nav_fw_climb_angle = 52
+set nav_fw_dive_angle = 20
+set nav_fw_pitch2thr_smoothing = 5
+set nav_fw_loiter_radius = 6858
+set fw_loiter_direction = YAW
+set nav_fw_cruise_speed = 1800
+set nav_fw_control_smoothness = 7
 set nav_fw_launch_max_angle = 120
 set nav_fw_launch_motor_delay = 0
 set nav_fw_launch_spinup_time = 25
 set nav_fw_launch_end_time = 4000
 set nav_fw_launch_timeout = 6000
-set nav_fw_launch_max_altitude = 7010
-set nav_fw_launch_climb_angle = 28
+set nav_fw_launch_max_altitude = 7620
+set nav_fw_launch_climb_angle = 30
 set osd_video_system = DJI_NATIVE
 set osd_units = IMPERIAL
 set osd_time_alarm = 55
 set osd_alt_alarm = 128
 set osd_dist_alarm = 3219
 set osd_current_alarm = 40
-set osd_rssi_dbm_alarm = -95
+set osd_rssi_dbm_alarm = -98
 set osd_crosshairs_style = AIRCRAFT
 set osd_horizon_offset = 1
 set osd_ahi_camera_uptilt_comp = ON
@@ -227,24 +236,25 @@ set fw_ff_pitch = 95
 set fw_p_roll = 15
 set fw_i_roll = 3
 set fw_d_roll = 7
-set fw_ff_roll = 65
+set fw_ff_roll = 75
 set fw_p_yaw = 20
 set fw_i_yaw = 0
 set fw_ff_yaw = 100
-set max_angle_inclination_rll = 570
-set max_angle_inclination_pit = 500
+set max_angle_inclination_rll = 550
+set max_angle_inclination_pit = 550
 set dterm_lpf_hz = 100
 set fw_turn_assist_pitch_gain =  0.300
 set nav_fw_pos_z_p = 35
 set nav_fw_pos_xy_p = 70
 set d_boost_min =  1.000
 set d_boost_max =  1.000
-set rc_expo = 50
+set rc_expo = 65
 set rc_yaw_expo = 30
-set roll_rate = 18
+set roll_rate = 19
 set pitch_rate = 8
 set yaw_rate = 4
-set manual_rc_expo = 40
+set manual_rc_expo = 69
+set manual_pitch_rate = 95
 
 # control_profile
 control_profile 2
@@ -333,10 +343,10 @@ set bat_cells = 3
 set vbat_min_cell_voltage = 320
 set vbat_warning_cell_voltage = 330
 set battery_capacity = 4500
-set battery_capacity_warning = 1350
-set battery_capacity_critical = 900
+set battery_capacity_warning = 1125
+set battery_capacity_critical = 675
 set throttle_idle =  0.000
-set nav_fw_cruise_thr = 1365
+set nav_fw_cruise_thr = 1345
 set nav_fw_min_thr = 1000
 set nav_fw_max_thr = 2000
 set nav_fw_launch_thr = 2000
